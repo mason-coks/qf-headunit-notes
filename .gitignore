@@ -1,0 +1,6 @@
+qf-info-*/
+*.apk
+*.jar
+*.oat
+*.odex
+*.vdex

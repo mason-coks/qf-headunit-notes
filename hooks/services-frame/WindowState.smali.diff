@@ -1,0 +1,13 @@
+--- a/smali_classes2/com/android/server/wm/WindowState.smali
++++ b/smali_classes2/com/android/server/wm/WindowState.smali
+@@ -8684,6 +8684,10 @@
+     .restart local v11    # "layoutDisplayFrame":Landroid/graphics/Rect;
+     .restart local v14    # "layoutContainingFrame":Landroid/graphics/Rect;
+     :goto_6
++    invoke-static {v0, v11}, Lcom/android/server/wm/OtulaMarco;->marco(Lcom/android/server/wm/WindowState;Landroid/graphics/Rect;)Landroid/graphics/Rect;
++    move-result-object v11
++    invoke-static {v0, v14}, Lcom/android/server/wm/OtulaMarco;->marco(Lcom/android/server/wm/WindowState;Landroid/graphics/Rect;)Landroid/graphics/Rect;
++    move-result-object v14
+     const/4 v12, 0x0
+ 
+     .line 1193
